@@ -64,4 +64,8 @@ object Adb {
     fun getTopActivity():String?{
         return execRootCmd("dumpsys window windows | grep mFocusedActivity")
     }
+
+    //getevent -t 需要持续读取
+
+
 }
