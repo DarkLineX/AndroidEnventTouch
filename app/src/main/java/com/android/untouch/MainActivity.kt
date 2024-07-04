@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         showFloat()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            Auto.touch()
+            Auto.click()
         },5000)
 
     }
