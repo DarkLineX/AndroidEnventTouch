@@ -12,8 +12,8 @@
 
     <TextView
         android:id="@+id/float_v0"
-        android:layout_width="16dp"
-        android:layout_height="16dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:background="@color/white"
         android:gravity="center"
         android:text=""

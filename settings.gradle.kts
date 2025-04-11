@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UnTouch"
+rootProject.name = "AndroidEnventTouch"
 include(":app")

@@ -22,11 +22,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         showFloat()
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            Auto.click()
-        },5000)
-
     }
 
     private fun showFloat() {
@@ -38,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 t0 = it.findViewById(R.id.float_v0)
                 rootView = it.findViewById(R.id.root_view)
                 t0!!.setOnClickListener{
-
+                    Auto.click()
                 }
             }.show()
     }
