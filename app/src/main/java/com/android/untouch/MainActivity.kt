@@ -7,9 +7,12 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.android.untouch.action.Auto
 import com.android.untouch.databinding.ActivityMainBinding
+import com.android.untouch.uiautomator.UiautomatorUtils
+import com.android.untouch.uiautomator.XPathXMLParser
 import com.lzf.easyfloat.EasyFloat
 import com.lzf.easyfloat.enums.ShowPattern
 import com.lzf.easyfloat.enums.SidePattern
+import java.lang.Thread.sleep
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +36,11 @@ class MainActivity : AppCompatActivity() {
                 t0 = it.findViewById(R.id.float_v0)
                 rootView = it.findViewById(R.id.root_view)
                 t0!!.setOnClickListener{
-                    Auto.click()
+                    Thread{
+                        UiautomatorUtils.dumpXml()
+                        sleep(1000)
+                        XPathXMLParser.parserDoc()
+                    }.start()
                 }
             }.show()
     }
